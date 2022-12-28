@@ -1,0 +1,12 @@
+# Injection of gitlab-ci.yml from common location 
+include:
+  - project: 'tmobile/templates'
+    ref: tmo/master
+    file: '/gitlab-ci/pipelines/dsg/charge/sb/.gitlab-ci.yml'
+    
+variables:
+    REPO_CODE: "CHARGE"
+    ORG_NAME: "CHARGE"
+    CONFIG_URL: "dsg-bims-cr"
+    
+
